@@ -1,6 +1,7 @@
 <main class="bg-cream">
   <div class="flex flex-col">
-    <div class="font-serif text-primary grid grid-cols-2 justify-items-center">
+    <!-- Navbar -->
+    <div class="font-serif text-primary grid grid-cols-2 justify-items-center py-4 fixed top-0 bg-cream w-full transition-transform" [@slideUpDown]="isHidden ? 'hidden' : 'visible'">
       <div class="w-96">
         <h1 class="text-nav-title">Common Cloth</h1>
       </div>
@@ -10,14 +11,14 @@
         <a class="px-10 py-5" >Categories</a>
       </div>
     </div>
-    <div class="">
+    <!-- blog entries -->
+    <div class="py-20">
       <app-blog-entry></app-blog-entry>
       <app-blog-entry></app-blog-entry>
       <app-blog-entry></app-blog-entry>
       <app-blog-entry></app-blog-entry>
       <app-blog-entry></app-blog-entry>
       <app-blog-entry></app-blog-entry>
-
     </div>
   </div>
 </main>
