@@ -2,12 +2,14 @@ import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BlogEntryComponent } from './blog-entry/blog-entry.component';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BlogEntryComponent,],
+  imports: [RouterOutlet, BlogEntryComponent, RouterModule, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [

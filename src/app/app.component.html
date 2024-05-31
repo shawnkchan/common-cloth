@@ -3,24 +3,18 @@
     <!-- Navbar -->
     <div class="font-serif text-primary grid grid-cols-2 justify-items-center py-4 fixed top-0 bg-cream w-full transition-transform" [@slideUpDown]="isHidden ? 'hidden' : 'visible'">
       <div class="w-96">
-        <h1 class="text-nav-title">Common Cloth</h1>
+        <h1 class="text-nav-title" [routerLink]="['/']">Common Cloth</h1>
       </div>
       <div class="text-nav-section flex justify-evenly">
-        <a class="px-10 py-5 ">Blog</a>
-        <a class="px-10 py-5" >Trends</a>
+        <a class="px-10 py-5">Blog</a>
+        <a class="px-10 py-5" [routerLink]="['/trends']">Trends</a>
         <a class="px-10 py-5" >Categories</a>
       </div>
     </div>
-    <!-- blog entries -->
-    <div class="py-20">
-      <app-blog-entry></app-blog-entry>
-      <app-blog-entry></app-blog-entry>
-      <app-blog-entry></app-blog-entry>
-      <app-blog-entry></app-blog-entry>
-      <app-blog-entry></app-blog-entry>
-      <app-blog-entry></app-blog-entry>
-    </div>
   </div>
-</main>
 
-<router-outlet />
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+</main>
